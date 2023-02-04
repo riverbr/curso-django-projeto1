@@ -33,7 +33,7 @@ class RecipeModelTest(RecipeTestBase):
         ('servings_unit', 65),
     ])
     def test_recipe_fields_max_length(self, field, max_length):
-        setattr(self.recipe, field, 'A' * (max_length + 0))
+        setattr(self.recipe, field, 'A' * (max_length + 1))
         with self.assertRaises(ValidationError):
             self.recipe.full_clean()  # AQUI A VALIDAÇÃO OCORRE
 
