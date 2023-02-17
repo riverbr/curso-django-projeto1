@@ -10,6 +10,7 @@
       "--errors-only"
     ],
     "python.formatting.autopep8Args": ["--indent-size=4"],
+    "python.terminal.activateEnvInCurrentTerminal": true,
     "python.defaultInterpreterPath": "venv/bin/python",
     "[python]": {
       "editor.defaultFormatter": "ms-python.python", // ms-python.python
